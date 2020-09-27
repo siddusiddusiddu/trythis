@@ -1,0 +1,175 @@
+
+.about-skills-page{
+   
+    background-color: rgba(48, 160, 194, 0.7);
+  }
+
+  .about-skills-cont{
+      margin-top: 20px;
+      width:90%;
+      border-radius: 1.2rem;
+    
+      
+  }
+  
+  .skills-s{
+    font-size:4.3rem;
+    color:rgba(23, 144, 165, 0.9);
+  }
+  .about-skill-heading{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  }
+  
+  .about-skill-text{
+      font-size: 2.5rem;
+      font-weight:bold;
+  }
+  
+
+  
+    .about-skills-wrap {
+      margin: 2rem;
+      transform-style: preserve-3d;
+      transform: perspective(100rem);
+      cursor: pointer;
+    }
+    .about-skills-container {
+        /* color: black; */
+      --rX: 0;
+      --rY: 0;
+      --bX: 50%;
+      --bY: 80%;
+      width: 12rem;
+      height: 20rem;
+      border: 1px solid #e7e8f1;
+      border-radius: 1.6rem;
+      padding: 4rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      transform: rotate(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+      /* background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), url("https://raw.githubusercontent.com/sabasan13/sabasan13.github.io/master/photo-1559113513-d5e09c78b9dd.jpg"); */
+      background-position: var(--bX) var(--bY);
+      background-size: 40rem auto;
+      box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
+      transition: transform .6s 1s;
+    }
+    .about-skills-container:before,
+    .about-skills-container:after {
+      content: "";
+      width: 2rem;
+      height: 2rem;
+      border: 3px solid rgba(193, 197, 199, 0.9);
+      position: absolute;
+      z-index: 2;
+      opacity: .3;
+      transition: .3s;
+    }
+    .about-skills-container:before {
+      top: 2rem;
+      right: 2rem;
+      border-bottom-width: 0;
+      border-left-width: 0;
+    }
+    .about-skills-container:after {
+      bottom: 2rem;
+      left: 2rem;
+      border-top-width: 0;
+      border-right-width: 0;
+    }
+    .about-skills-container--active {
+      transition: none;
+    }
+  
+    .about-skills-container--1{
+        background-color: rgba(224, 222, 222, 0.9);
+        color:white;
+    }
+    .about-skills-container--2 {
+        background-color: rgb(10, 72, 131);
+        color:white;
+
+    }
+    .about-skills-container--3 {
+        background-color: rgba(38, 218, 164, 0.4);
+        color:white;
+       
+        
+     
+    }
+    .about-skills-container--4 {
+        background-color: rgba(167, 201, 105, 0.4);
+        color:white;
+    
+      }
+      .about-skills-container--5 {
+          background-color: skyblue;
+          color:white;
+      
+      }
+  
+      .about-skills-container--6 {
+        background-color: rgba(10,10,10,0.4);
+        color:white;
+
+    }
+    .about-skills-container--7 {
+      background-color: rgba(214, 118, 93, 0.4);
+      color:white;
+
+  }
+  .about-skills-container--8 {
+    background-color: rgba(121, 88, 211, 0.4);
+    color:white;
+
+}
+.about-skills-container--9 {
+  background-color: rgba(48, 134, 150, 0.4);
+  color:white;
+
+}
+.about-skills-container--10 {
+  background-color: rgba(33, 216, 103, 0.4);
+  color:white;
+
+}
+  
+    .about-skills-container p{
+      /* color: #e7e8f1; */
+      font-size: 2.2rem;
+      font-family: cursive;
+    }
+    .about-skills-wrap:hover .about-skills-container:before,
+    .about-skills-wrap:hover .about-skills-container:after {
+      width: calc(100% - 4rem);
+      height: calc(100% - 4rem);
+    }
+    
+    
+    
+    .about-skills-card-icons{
+        color:white;
+        font-size:3rem;
+    }
+    .about-name-heading{
+        font-size: 20px;
+
+    }
+  
+    .skills-heading{
+        text-align: end;
+        font-size:3rem;
+        color:white;
+        letter-spacing: 1.2rem;
+ 
+        font-family: 'Jockey One', sans-serif;
+    }
+
+    .fa-react{
+      color:rgba(16, 94, 114, 0.9)
+    }

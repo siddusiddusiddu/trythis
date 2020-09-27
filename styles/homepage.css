@@ -1,0 +1,305 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+       
+}
+       
+html{
+    overflow-x: hidden;
+}
+
+body{
+      width: 100%;
+        height: 100%;
+
+        background-size: cover;
+
+        
+        background-repeat: no-repeat;
+
+        background-position: center;
+        overflow-x: hidden;
+}
+
+.home-heading{
+
+    font-size:2.5rem;
+
+    text-align: end;
+    font-family: 'Jockey One', sans-serif;
+    letter-spacing: 1.2rem;
+}
+
+
+
+.home-page{
+ 
+    padding-top:50px;
+ 
+
+    background-image: url(../images/hello.jpg);
+                  background-size: cover;
+             background-position: center;
+        
+             background-repeat: no-repeat;
+
+}
+
+
+.home-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.home-myimage{
+    display: block;
+ 
+    width:75%;
+    height: 400px;
+}
+
+
+.container-fluid{
+    width:90%;
+
+}
+
+.home-brief{
+  
+    margin-top: 30px;
+
+}
+
+.home-description{
+   
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.home-description-name{
+    font-size:1.5rem;
+    opacity: 0.8;
+}
+.home-description-highlight{
+    
+    font-size:3rem;
+    font-weight:bolder;
+}
+.home-description-about{
+    font-size:1.6rem;
+    opacity:0.8;
+}
+ 
+ .home-description-line{
+
+    border-color:gray;
+    width:50%;
+}
+ 
+.bio-name-job{
+    margin-left: 10px;
+    color:black;
+}
+
+.bio-name{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.home-links{
+    margin-top: 10px;
+}
+
+.home-icons ul{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.home-icons ul span{
+    display: flex;
+}
+
+
+
+.home-icons ul li{
+    list-style: none;
+    margin:0 5px;
+}
+
+
+.home-icons ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 30px;
+    color:#000;
+    transition: 0.5s;
+    z-index:100;
+}
+
+.home-h{
+    font-size:3.3rem;
+    
+}
+.home-icons ul li a:hover{
+    color:#fff;
+}
+
+.home-icons ul li a:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-decoration: none;
+    background-color: #000;
+    border-radius: 50%;
+    z-index:-1;
+    transform:scale(0);
+    transition:0.8s ;
+}
+
+.home-icons ul li a:hover:before{
+    transform:scale(1);
+    background-color: #000;
+}
+
+ .home-hover-display{
+    text-align: center;
+    font-size:2.5rem;
+    font-weight:bold;
+    /* margin:25px 0; */
+    height:50px;
+   margin-bottom: 20px;
+}
+
+.home-hover-display-div{
+    opacity: 0;
+}
+
+
+.home-icons .home-icon-span-value{
+    display: none;
+}
+
+
+ .home-brief-contact{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.home-brief-contact-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.home-brief-contact-icon{
+    height:50px;
+    width:50px;
+  
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 50%;
+    transition:0.8s;
+}
+
+.home-brief-contact-icon:hover{
+    background-color: black;
+    border-radius:20px;
+}
+
+
+
+.home-number-icon{
+    font-size:1.5rem;
+    color:white;
+}
+
+.home-email-icon{
+    font-size:1.5rem;
+    color:white;
+}
+
+
+.home-icon-text{
+    display: none;
+}
+
+
+.home-brief-contact-icon:hover .home-icon-text{
+    display: inline;   
+    color:white;
+    margin-left: 10px;
+}
+
+.home-email-div:hover {
+    background-color: black;
+    width: 320px;
+}
+
+
+.home-number-div:hover {
+    background-color: black;
+    width: 200px;
+}
+ 
+.home-discover{
+    position: absolute;
+    bottom: 16px;
+    right:280px;
+    font-size:1.3rem;
+    font-weight:bold;
+    display: flex;
+    justify-content: center;
+    }
+
+.home-material-icons{
+    font-family: "Material Icons";
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    transform: rotate(180deg);
+    padding-top: 1px;
+
+    margin-right: 3px;
+}
+
+   
+.home-learning{
+    margin-left: 100px;
+    
+    font-size:1.5rem;
+    font-weight: bold;
+}
+
+  
+
+  .home-learn{
+    white-space: nowrap;
+    overflow: hidden;    
+    font-family: 'Source Code Pro', monospace;  
+    font-size: 28px;
+   
+  }
+

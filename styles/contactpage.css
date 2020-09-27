@@ -1,0 +1,482 @@
+
+.contact-heading{
+    font-size:3rem;
+    text-align: end;
+    font-family: 'Jockey One', sans-serif;
+    color:white;
+    letter-spacing: 1.2rem;
+}
+
+.contact-c{
+    font-size:4.3rem;
+}
+
+.contact-page{
+    padding: 40px;
+    position: relative; 
+    
+}
+
+
+
+.contact-main-row-map{
+    position: relative;
+    height:400px;
+}
+
+
+#contact-map-exact{ 
+    border: 2px solid white;
+    position: absolute; 
+    top: 0;
+     bottom: 0; 
+    width: 100%; 
+    border-radius: 10px;
+}
+
+.contact-main-row-map::after{
+    content: "";
+    position: absolute;
+    background-color: rgba(20,20,20,0.5);
+    width:100%;
+    height:100%;
+    pointer-events: none;
+}
+
+.contact-main-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.contact-main-row-form{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  
+}
+.contact-form-div{
+    width:70%;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+form{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    width:100%;
+    margin-top: 10px;
+    
+
+}
+
+.form{
+    font-size:16px;
+    width:70%;
+    position: relative;
+    height:50px;
+    /* background-color: cadetblue; */
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.form input{
+    width:100%;
+    height:100%;
+    color:white;
+    padding-top: 20px;
+    padding-left: 10px;
+    border:none;
+    outline: none; 
+            
+    
+background-color:inherit;
+ 
+}
+
+
+.form label{
+    position: absolute;
+    bottom:0px;
+    left:0%;
+    margin-bottom: 0%;
+    width: 100%;
+    height:100%;
+    color:white;
+    font-weight: bold;
+    pointer-events: none;
+    border-bottom: 2px solid white;
+}
+
+
+.form label::after{
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom: 4px solid white;
+    left:0;
+    bottom:-1px;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+
+
+.form .content-name{
+    position: absolute;
+    bottom: 5px;
+    left: 0%;
+    transition:all 0.3s ease;
+    padding-left: 10px;
+}
+
+
+ .form input:focus .content-name{
+    bottom: 0%;
+    font-size: 0.5rem ;
+}
+
+.form input:focus + .label-name .content-name, .form input:valid + .label-name .content-name{
+
+    transform: translate(-3px,-100%);
+    font-size:14px;
+    color: white;
+}
+
+.form input:focus + .label-name::after, .form input:valid + .label-name::after{
+    transform: translateX(0);
+}
+
+
+
+.textarea-form{
+    font-size:16px;
+    width:70%;
+    position: relative;
+    height:150px;
+    margin-bottom:50px;
+    overflow: hidden;
+}
+
+.textarea-form textarea{
+    width:100%;
+    height:100%;
+    color:white;
+    padding-top: 20px;
+    padding-left: 10px;
+    border:none;
+    outline: none;
+    
+background-color:inherit;
+ 
+ 
+}
+
+
+.textarea-form label{
+    position: absolute;
+    bottom:0px;
+    left:0%;
+    margin-bottom: 0%;
+    width: 100%;
+    height:100%;
+    font-weight: bold;
+    color:white;
+    pointer-events: none;
+    border-bottom: 2px solid white;
+}
+
+
+.textarea-form label::after{
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+    border-bottom: 4px solid white;
+    left:0;
+    bottom:-1px;
+    transform: translateX(-100%);
+    
+    transition: all 0.3s ease;
+}
+
+
+
+.textarea-form .content-name{
+    position: absolute;
+    bottom: 104px;
+    left: 0%;
+    transition:all 0.3s ease;
+    padding-left: 10px;
+}
+
+
+.textarea-form textarea:focus + .label-name .content-name, .textarea-form textarea:valid + .label-name .content-name{
+
+    transform: translate(-3px,-100%);
+    font-size:14px;
+    color: white;
+}
+
+.textarea-form textarea:focus + .label-name::after, .textarea-form textarea:valid + .label-name::after{
+    transform: translateX(0);
+}
+
+
+ .form-button{
+     height: 60px;
+     width:90px;
+ 
+     position: relative;
+    overflow: hidden;
+    border:none;
+    outline: none;
+ }
+
+ .form-button button{
+     position: absolute;
+     bottom: -30px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border:2px solid black;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    outline: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    /* background-color: rgba(240,240,240,0.7); */
+    background-color: white;
+ }
+
+
+.form-button button:hover{
+    
+    height:110%;
+}
+
+
+
+.contact-last-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    /* height:50px; */
+    margin-top:50px;
+    color: white;
+}
+
+
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border-right: 3px solid white; */
+    height:100%;
+    margin-top:10px;
+}
+
+
+.contact-last-icon{
+    font-size:1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-phone-box{
+    border:none;
+}
+
+
+
+.contact-github-icon:hover , .contact-linkedin-icon:hover{
+    font-size:2rem;
+    cursor: pointer;
+}
+
+
+
+
+
+.contact-background{
+    background-color: black;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    position: absolute;
+    opacity: 1;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+
+
+
+.contact-icon-div{
+    
+    height: 100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.contact-icon-div-only{
+    position: relative;
+}
+
+
+.contact-icon{
+    color:rgba(210,215,215,1);
+    /* color: white; */
+    font-size:15rem;
+    
+
+}
+
+.contact-icon-animate{
+    animation: ringing 4s infinite;
+}
+
+
+
+
+.contact-waves{
+    position: absolute;
+    width:100%;
+    height:100%;
+}
+
+.contact-wave1{
+    position: absolute;
+    top:-210px;
+      left:80px;
+}
+
+.contact-wave2{
+    position: absolute;
+
+    top:-230px;
+      left:100px;
+}
+
+
+#contact-canvas1{
+    opacity: 0;
+   
+ 
+}
+
+
+#contact-canvas2{
+    opacity: 0;
+  
+ 
+}
+
+
+
+
+.contact-canvas1-animate{
+    opacity: 0;
+    animation: wave1-animate 4s infinite;
+}
+
+
+.contact-canvas2-animate{
+    opacity: 0;
+    animation: wave2-animate 4s infinite;
+}
+
+
+#love{
+    position: absolute;
+    right:60px;
+    top:200px;
+    color:white;
+    font-size:3rem;
+    font-family: cursive;
+}
+
+
+#hear{
+    position: absolute;
+    right: 60px;
+    top:350px;
+    color:white;
+    font-size: 3rem;
+    font-family: cursive;
+}
+
+#from{
+    position: absolute;
+    right: 60px;
+    top:500px;
+    color:white;
+    font-size: 3rem;
+    font-family: cursive;
+}
+@keyframes wave1-animate{
+    0%{ opacity:1;}
+    10%{ opacity:0;}
+    20%{ opacity:1;}
+    30%{ opacity:0;}
+    40%{ opacity:1;}
+    50%{ opacity:0;}
+    60%{ opacity:1;}
+    72%{ opacity: 0;}
+}
+
+@keyframes wave2-animate{
+    0%{ opacity:0;}
+    10%{ opacity:1;}
+    20%{ opacity:0;}
+    30%{ opacity:1;}
+    40%{ opacity:0;}
+    50%{ opacity:1;}
+    60%{ opacity:0;}
+    65%{ opacity: 0;}
+}
+
+
+
+
+
+  @keyframes ringing{
+      0%{ transform: translateX(0.5px) scale(1);}
+      4%{ transform: translateX(-0.5px) scale(1.1);}
+      8%{ transform: translateX(0.5px) scale(1);}
+      12%{ transform: translateX(-0.5px) scale(1.1);}
+      16%{ transform: translateX(0.5px) scale(1);}
+      20%{ transform: translateX(-0.5px) scale(1.1);}
+      24%{ transform: translateX(0.5px) scale(1);}
+      28%{ transform: translateX(-0.5px) scale(1.1);}
+      32%{ transform: translateX(0.5px) scale(1);}
+      36%{ transform: translateX(-0.5px) scale(1.1);}
+      40%{ transform: translateX(0.5px) scale(1);}
+      44%{ transform: translateX(-0.5px) scale(1.1);}
+      48%{ transform: translateX(0.5px) scale(1);}
+      52%{ transform: translateX(-0.5px) scale(1.1);}
+      56%{ transform: translateX(0.5px) scale(1);}
+      60%{ transform: translateX(-0.5px) scale(1.1);}
+      64%{ transform: translateX(0.5px) scale(1);}
+      68%{ transform: translateX(-0.5px) scale(1.1);}
+      72%{ transform: translateX(0.5px) scale(1);}
+
+  }
+
+
+

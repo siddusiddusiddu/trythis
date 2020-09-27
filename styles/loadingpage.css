@@ -1,0 +1,104 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+       
+
+    
+#load-screen{
+    background-color: #000;
+    opacity:1;
+    position:fixed;
+    z-index: 999999;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    
+background-image: linear-gradient(
+    115deg,
+    rgba(58, 58, 58, 0.8),
+    rgba(70, 70, 70, 0.7)
+  ),
+  url(https://images.unsplash.com/photo-1489844097929-c8d5b91c456e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+
+}
+
+#load-screen-content{
+position: absolute;
+bottom: 60px;
+left:60px;
+color:rgba(255,255,255,0.8);
+animation: content-animation 1.5s ease-out;
+font-family: 'Crimson Text', serif;
+}
+
+#load-screen-welcome{
+    font-size:2.5rem;
+}
+
+#load-screen-wait{
+    font-size:4rem;
+}
+
+#load-screen-bubbles{
+position: absolute;
+top: 50%;  
+left: 50%; 
+transform: translate(-50%, -50%)
+}
+
+
+.bubble{
+    width: 15px;
+    height: 15px;
+    margin-left: 0.5px;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 50%;
+    display: inline-block;
+    animation:  in-and-out-bubbles 1.20s infinite ease-in-out;
+}
+
+
+
+.bubble1{
+    animation-delay: -0.35s;
+}
+
+.bubble2{   
+    animation-delay: -0.20s; 
+}
+
+
+@keyframes in-and-out-bubbles {
+    0%,80%,100% { transform: scale(0) }
+    20% { transform: scale(1) }
+}
+
+@keyframes content-animation{
+    0%{
+        transform: translateY(200%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+#load-bio{
+    margin-top:45px;
+    margin-left:60px;
+}
+.load-bio-name-job{
+    color:rgba(255,255,255,0.8);
+}
+
+.load-bio-name{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
