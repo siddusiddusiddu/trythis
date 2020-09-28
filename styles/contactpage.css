@@ -429,6 +429,12 @@ background-color:inherit;
     font-size: 3rem;
     font-family: cursive;
 }
+
+
+
+.contact-box a{
+    color:white;
+}
 @keyframes wave1-animate{
     0%{ opacity:1;}
     10%{ opacity:0;}
