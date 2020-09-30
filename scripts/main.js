@@ -64,7 +64,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // this is to trigger the animations in home page 
 
- $(window).ready(function(){
+ $(window).load(function(){
    
     $(".home-discover").addClass("home-discover-animate");
     $(".home-middle").addClass("home-middle-animate");
