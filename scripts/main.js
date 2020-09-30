@@ -1,22 +1,19 @@
 
-/*     var loadScreen = document.querySelector("#load-screen");
-    document.onreadystatechange = function() { 
-        if (document.readyState !== "complete") { 
-            document.querySelector( 
-            "body").style.display = "none"; 
-            document.querySelector( 
-            "#load-screen").style.visibility = "visible"; 
-        } else { 
-            document.querySelector( "#load-screen").style.display = "none";
-            document.querySelector( "body").style.display = "block";
-        } 
-    };   */
-
 
 document.getElementById("load-screen").style.display = "block";
 
 window.onload = function(){
   document.getElementById("load-screen").style.display = "none";
+
+     
+  $(".home-discover").addClass("home-discover-animate");
+  $(".home-middle").addClass("home-middle-animate");
+  $(".home-last-two").addClass("home-last-two-animate");
+  $(".home-first-two").addClass("home-first-two-animate");
+  $(".home-learn").addClass("home-learn-animate");
+   $(".home-material-icons").addClass("home-material-icons-animate");
+
+
 }
 
 
@@ -61,21 +58,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 }
 
 
-
-// this is to trigger the animations in home page 
-
- $(window).load(function(){
-   
-    $(".home-discover").addClass("home-discover-animate");
-    $(".home-middle").addClass("home-middle-animate");
-    $(".home-last-two").addClass("home-last-two-animate");
-    $(".home-first-two").addClass("home-first-two-animate");
-    $(".home-learn").addClass("home-learn-animate");
-     $(".home-material-icons").addClass("home-material-icons-animate");
-});
- 
-
-/*  window.onload = function(){
-
- }
- */
