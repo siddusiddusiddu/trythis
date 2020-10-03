@@ -128,7 +128,7 @@ slide:nth-child(3){
 slide:nth-child(4){
     left:0%;
     animation-delay: 8s;
-    background-image: url(../images/me.jpg);
+    background-image: url(../images/todo.png);
     background-position: center;
     background-size: cover;
 }
